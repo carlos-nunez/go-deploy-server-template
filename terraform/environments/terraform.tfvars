@@ -1,0 +1,11 @@
+# Replace with the arn's from the shared resources.
+shared_cert = ""
+shared_ecs_cluster_id = ""
+shared_listener_arn = ""
+shared_load_balancer_arn = ""
+shared_security_group_id = ""
+shared_subnet_1_id = ""
+shared_subnet_2_id = ""
+shared_vpc_id = ""
+shared_ws_load_balancer_dns_name = ""
+shared_ws_zone_id = ""
