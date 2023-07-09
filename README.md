@@ -38,3 +38,17 @@ The deploy server takes in a deploy and destroy requests from the go-api-templat
 On a deploy request, it will take in the provided data, such as UUID, and create a folder with that UUID. It will then create the necessary files, such as main.tf and variables.tf, and run the baseline. This will spinup an environment at uuid.domain.com. Once it's done, it sets the status of the websocket server in the database, and commits the tf state to version control.
 
 On a destroy request, terraform destroy is run on the folder with the provided UUID.
+
+## Setup
+Replace neccessary arns in main.tf and variable files.
+Create a .env file with the following matching your api's .env
+```
+MONGO_URI=""
+PRODUCT=""
+DEPLOY_KEY=""
+```
+
+Run using
+```
+go run server.go
+```
