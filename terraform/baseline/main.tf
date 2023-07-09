@@ -105,7 +105,7 @@ data "aws_route53_zone" "ws_zone" {
 # Route 53 record
 resource "aws_route53_record" "ws_subdomain" {
   zone_id = data.aws_route53_zone.ws_zone.zone_id
-  name    = "${var.uuid}.domain.com"
+  name    = "${var.uuid}.socketservers.com"
   type    = "A"
 
   alias {
