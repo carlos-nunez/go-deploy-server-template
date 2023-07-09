@@ -30,10 +30,6 @@
       {
         "name": "PRODUCT",
         "value": ""
-      },
-      {
-        "name": "SIGNING_SECRET",
-        "value": ""
       }
     ],
     "logConfiguration": {
